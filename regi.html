@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOU Convocation | Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="bg-[#020617] text-white min-h-screen flex items-center justify-center p-4 md:p-6">
+    <a href="index.html" class="absolute top-6 left-6 text-gray-400 hover:text-white flex items-center gap-2 transition">
+        <span class="text-xl">←</span> Back to Home
+    </a>
+
+    <div class="max-w-md w-full glass p-6 md:p-8 rounded-[2rem] shadow-2xl">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-black tracking-tighter text-amber-500">CONVOCATION 4.0</h2>
+            <p class="text-gray-400 text-sm">Create your account to claim your pass.</p>
+        </div>
+
+        <div class="space-y-4">
+        <div>
+         <label class="text-[10px] uppercase tracking-widest text-gray-500 ml-2">Full Name</label>
+         <input type="text" id="userNameInput" placeholder="Enter Your Name" class="w-full bg-white/5 border border-white/10 px-5 py-3 rounded-2xl focus:border-amber-500 outline-none transition text-sm">
+       </div>
+
+       <button onclick="saveAndContinue()" class="w-full bg-amber-500 text-black font-bold py-4 rounded-2xl hover:bg-amber-400 transform active:scale-95 transition shadow-lg">
+         Continue to Passes
+       </button>
+     </div>
+     </div>
+     <script>
+        function saveAndContinue() {
+        const name = document.getElementById('userNameInput').value;
+        if (name.trim() === "") {
+            alert("Please enter your name");
+            return;
+        }
+        // Save name to browser memory
+        localStorage.setItem('souConvocationName', name);
+        // Redirect to pass page
+        window.location.href = 'pass.html';
+    }
+     </script>
+</body>
+</html>

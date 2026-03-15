@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convocation 4.0 | Silver Oak University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPrimary: '#064e3b', // Deep Emerald
+                        brandSecondary: '#d4af37', // Gold
+                        darkBg: '#020617',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-white font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 md:px-10 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold tracking-tighter text-brandSecondary">SOU CONVOCATION 4.0</h1>
+            <ul class="hidden lg:flex space-x-8 text-sm uppercase tracking-widest font-semibold text-gray-400">
+                <li><a href="#about" class="hover:text-brandSecondary transition">About</a></li>
+                <li><a href="#highlights" class="hover:text-brandSecondary transition">Highlights</a></li>
+                <li><a href="#schedule" class="hover:text-brandSecondary transition">Schedule</a></li>
+               <!-- <li><a href="#gallery" class="hover:text-brandSecondary transition">Memories</a></li>-->
+            </ul>
+            <a href="regi.html" class="bg-brandSecondary text-black px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition shadow-[0_0_15px_rgba(212,175,55,0.3)]">Register Now</a>
+        </div>
+    </nav>
+
+<header class="h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050335102-c3251c17b394?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-darkBg via-transparent to-darkBg"></div>
+    
+    <div class="relative z-10 text-center px-4">
+        <img src="Logo.png" alt="SOU Logo" class="w-48 mx-auto mb-8 drop-shadow-[0_0_15px_rgba(212,175,55,0.5)]">
+        
+        <h2 class="text-5xl md:text-8xl font-black mb-4 tracking-tighter uppercase">
+            The Final <span class="text-brandSecondary">Walk.</span>
+        </h2>
+        <p class="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-light">
+            Honoring the Class of 2026. A journey of excellence, a future of impact.
+        </p>
+    </div>
+</header>
+
+    <section id="highlights" class="py-24 container mx-auto px-6">
+        <h3 class="text-4xl md:text-5xl font-bold text-center mb-16 uppercase">Event <span class="text-brandSecondary">Highlights</span></h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-brandSecondary/50 transition duration-500 group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🎓</div>
+                <h4 class="text-xl font-bold mb-2">Degree Conferral</h4>
+                <p class="text-gray-400 text-sm">Official distribution of degrees to graduates across all departments by the Vice Chancellor.</p>
+            </div>
+            <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-brandSecondary/50 transition duration-500 group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🏆</div>
+                <h4 class="text-xl font-bold mb-2">Gold Medalists</h4>
+                <p class="text-gray-400 text-sm">Special recognition for academic toppers with gold medals and merit certificates.</p>
+            </div>
+            <div class="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-brandSecondary/50 transition duration-500 group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📽️</div>
+                <h4 class="text-xl font-bold mb-2">Cinematic Recap</h4>
+                <p class="text-gray-400 text-sm">A high-definition visual journey of the Class of 2026's years at Silver Oak University.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="py-24 bg-brandPrimary/5">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-4xl md:text-5xl font-bold text-center mb-16 uppercase italic">The <span class="text-brandSecondary">Timeline</span></h3>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 relative">
+                    <div class="md:w-32 font-bold text-brandSecondary text-xl shrink-0">09:00 AM</div>
+                    <div class="relative pb-8 border-l-2 border-brandSecondary/30 pl-8 md:pl-0 md:border-l-0">
+                        <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-brandSecondary"></div><br><br>
+                        <h4 class="text-2xl font-bold uppercase">Reporting & Robing</h4>
+                        <p class="text-gray-400 mt-2">Graduates arrive at the designated halls for robe collection and assembly.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 relative">
+                    <div class="md:w-32 font-bold text-brandSecondary text-xl shrink-0">11:00 AM</div>
+                    <div class="relative pb-8 border-l-2 border-brandSecondary/30 pl-8 md:pl-0 md:border-l-0">
+                        <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-brandSecondary"></div><br><br>
+                        <h4 class="text-2xl font-bold uppercase">Academic Procession</h4>
+                        <p class="text-gray-400 mt-2">Formal entry of the Dignitaries, Trustees, and Faculty members into the Convocation Hall.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 relative">
+                    <div class="md:w-32 font-bold text-brandSecondary text-xl shrink-0">01:30 PM</div>
+                    <div class="relative pl-8 md:pl-0">
+                        <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-brandSecondary"></div><br><br>
+                        <h4 class="text-2xl font-bold uppercase">Grand Luncheon</h4>
+                        <p class="text-gray-400 mt-2">A celebratory lunch for graduates, guests, and faculty members at the university grounds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
